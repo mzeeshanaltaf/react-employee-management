@@ -4,8 +4,15 @@ import DeletePopup from "./components/deletepopup/DeletePopup";
 import Employees from "./components/employees/Employees";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { getEmployees } from "./store/features/employee/employee.thunk";
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getEmployees());
+  }, []);
   return (
     <div className="min-h-screen w-full flex flex-col">
       <EmployeePopup />

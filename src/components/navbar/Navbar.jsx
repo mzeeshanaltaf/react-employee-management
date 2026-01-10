@@ -10,7 +10,7 @@ const Navbar = () => {
       <Layout>
         <div className="navbar shadow-sm">
           <div className="navbar-start">
-            <a className="btn btn-ghost text-xl">Employees</a>
+            <a className="btn btn-ghost text-xl">EmployeeSphere</a>
           </div>
           <div className="navbar-end">
             <button
